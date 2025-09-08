@@ -4,3 +4,9 @@
   --font-main: var(--font-nunito-sans);
   --font-paris2024: var(--font-paris2024);
 }
+
+@theme {
+  --color-soft-gold: #d4c47e;
+  --color-deep-blue: #1a18bb;
+  --color-soft-pink: #ffeaea;
+}
