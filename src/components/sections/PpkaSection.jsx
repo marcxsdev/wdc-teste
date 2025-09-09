@@ -1,4 +1,5 @@
 import PpkaCard from "../ui/PpkaCard";
+import ArrowIcon from "../icons/ArrowIcon";
 import Image from "next/image";
 
 const sedentariaItems = [
@@ -66,16 +67,28 @@ const atletaItems = [
 const PpkaSection = () => {
   return (
     <section className="relative overflow-hidden">
+      {/* fundo mobile */}
       <Image
         src="/images/ppka/ppka-bg.png"
         alt="Imagem de fundo da seção"
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="-z-10"
+        className="-z-10 lg:hidden"
       />
 
-      <div className="absolute top-0 left-0 mt-1.5">
+      {/* fundo desktop */}
+      <Image
+        src="/images/ppka/ppkabgd.png"
+        alt="Imagem de fundo da seção"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="-z-10 hidden lg:block"
+      />
+
+      {/* medalha esquerda */}
+      <div className="absolute top-0 left-0 mt-1.5 lg:hidden">
         <Image
           src="/images/ppka/medals1.png"
           alt="Medalha na borda esquerda"
@@ -84,7 +97,8 @@ const PpkaSection = () => {
         />
       </div>
 
-      <div className="absolute top-0 right-0 mt-1.5">
+      {/* medalha direita */}
+      <div className="absolute top-0 right-0 mt-1.5 lg:hidden">
         <Image
           src="/images/ppka/medals2.png"
           alt="Medalha na borda direita"
@@ -93,42 +107,70 @@ const PpkaSection = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-4 items-center pt-9">
+      {/* medalha desktop */}
+      <div className="absolute top-0 left-0 mt-1.5 hidden lg:block z-1">
+        <Image
+          src="/images/ppka/medals3.png"
+          alt="Medalha na borda esquerda"
+          width={315}
+          height={377}
+        />
+      </div>
+
+      {/* header */}
+      <div className="relative z-10 flex flex-col lg:flex-col-reverse gap-4 items-center pt-9 lg:px-58 lg:py-16">
         <div className="w-10 h-1.5 bg-soft-gold rounded-xl" />
-        <h3 className="text-white text-center font-main text-lg font-extrabold leading-5.5 mx-8">
+        <h3 className="text-white text-center font-main text-lg font-extrabold leading-5.5 mx-8 lg:text-3xl lg:leading-8.5">
           Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta
           e solta e as que não praticam nenhum exercício, ou seja, as
           sedentárias.
         </h3>
       </div>
 
-      <div className="flex flex-col gap-10 py-7">
+      {/* conteudo */}
+      <div className="relative z-10 flex flex-col gap-10 py-7 lg:px-14 lg:gap-14">
+        {/* Cards Sedentários */}
         <div className="flex flex-col gap-5 items-center justify-center">
-          <div className="">
-            <h5 className="inline-block text-deep-blue text-base font-main px-4.5 py-1 font-extrabold bg-silver border border-gold rounded-4xl">
+          {/* tag */}
+          <div>
+            <h5 className="inline-block text-deep-blue text-base lg:text-xl font-main px-4.5 py-1 font-extrabold bg-silver border border-gold rounded-4xl">
               PPKA SEDENTÁRIA
             </h5>
           </div>
 
-          <div className="flex flex-col gap-4">
+          {/* cards */}
+          <div className="flex flex-col gap-4 lg:grid lg:grid-cols-3 lg:gap-x-[48px] lg:gap-y-[16px] lg:max-w-[1248px] lg:w-full lg:mx-auto">
             {sedentariaItems.map((item) => (
               <PpkaCard key={item.id} text={item.text} bgColor="bg-white" />
             ))}
           </div>
         </div>
 
+        {/* Parte 2 - Cards Atletas */}
         <div className="flex flex-col gap-5 items-center justify-center">
-          <div className="">
-            <h5 className="inline-block text-deep-blue text-base font-main px-4.5 py-1 font-extrabold bg-silver border border-gold rounded-4xl">
+          {/* tag */}
+          <div>
+            <h5 className="inline-block text-deep-blue text-base lg:text-xl font-main px-4.5 py-1 font-extrabold bg-silver border border-gold rounded-4xl">
               PPKA ATLETA
             </h5>
           </div>
 
-          <div className="flex flex-col gap-4">
-            {atletaItems.map((item) => (
-              <PpkaCard key={item.id} text={item.text} bgColor="bg-soft-gold" />
+          {/* cards */}
+          <div className="relative flex flex-col gap-4 lg:grid lg:grid-cols-3 lg:gap-x-[48px] lg:gap-y-[16px] lg:max-w-[1248px] lg:w-full lg:mx-auto z-10">
+            {atletaItems.map((item, index) => (
+              <PpkaCard
+                key={item.id}
+                text={item.text}
+                bgColor="bg-soft-gold"
+                className={index === 7 ? "lg:col-span-2" : ""}
+              />
             ))}
           </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center py-14">
+        <div className="w-[50px] h-[50px] rounded-full bg-deep-blue border-2 border-soft-gold flex items-center justify-center">
+          <ArrowIcon className="w-7 h-7 text-[#D4C47E] rotate-270" />
         </div>
       </div>
     </section>
