@@ -6,7 +6,7 @@ const CarouselSection = () => {
     <section className="mt-[-84px]">
       <div className="bg-deep-blue relative mx-5 rounded-2xl overflow-hidden border-3 border-soft-gold">
         <Image
-          src="/images/Rectangle1628.png"
+          src="/images/carousel/Rectangle1628.png"
           alt="Imagem de fundo"
           fill
           quality={100}

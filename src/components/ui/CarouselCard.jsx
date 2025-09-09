@@ -19,7 +19,7 @@ const CarouselCard = ({ imageUrl, title, text }) => {
       <div className="flex flex-col items-center gap-2.5 px-5 flex-grow py-4">
         {/* Linha decorativa */}
         <Image
-          src="/images/Group40.png"
+          src="/images/carousel/cards/Group40.png"
           alt="Linha decorativa"
           width={122}
           height={8}
@@ -36,7 +36,7 @@ const CarouselCard = ({ imageUrl, title, text }) => {
       {/* Banner no rodapé do card */}
       <div className="relative w-full h-10">
         <Image
-          src="/images/Rectangle1577.png"
+          src="/images/carousel/cards/Rectangle1577.png"
           alt="Banner do card"
           fill
           quality={100}

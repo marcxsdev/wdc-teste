@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative h-screen w-full overflow-hidden border-b lg:border-soft-gold">
       {/* Imagem de fundo */}
       <Image
-        src="/images/BGCEL-1.png"
+        src="/images/hero/BGCEL-1.png"
         alt="Imagem de fundo da seção hero"
         layout="fill"
         objectFit="cover"
@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Conteudo da seção hero */}
       <div className="relative z-10 flex flex-col items-center gap-4 h-full text-center pt-8 px-5">
         <Image
-          src="/images/logo.png"
+          src="/images/hero/logo.png"
           alt="Logo do evento"
           width={184}
           height={56}
