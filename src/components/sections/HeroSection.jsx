@@ -6,8 +6,8 @@ const HeroSection = () => {
     <section className="relative h-screen w-full overflow-hidden border-b lg:border-soft-gold">
       {/* Imagem de fundo */}
       <Image
-        src={"/images/BGCEL-1.png"}
-        alt="Imagem de fundo da primeira seção"
+        src="/images/BGCEL-1.png"
+        alt="Imagem de fundo da seção hero"
         layout="fill"
         objectFit="cover"
         quality={100}

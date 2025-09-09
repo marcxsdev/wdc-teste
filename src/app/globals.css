@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin 'tailwind-scrollbar-hide';
 
 @theme inline {
   --font-main: var(--font-nunito-sans);
@@ -9,4 +10,5 @@
   --color-soft-gold: #d4c47e;
   --color-deep-blue: #1a18bb;
   --color-soft-pink: #ffeaea;
+  --color-silver: #d9d9d9;
 }
