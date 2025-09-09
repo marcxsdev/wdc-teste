@@ -1,10 +1,8 @@
-// src/components/ui/CarouselCard.jsx
 import Image from "next/image";
 
 const CarouselCard = ({ imageUrl, title, text }) => {
   return (
     <div className="bg-deep-blue flex flex-col justify-between w-[268px] h-[484px] rounded-2xl border-3 border-soft-gold overflow-hidden flex-shrink-0">
-      {/* Imagem principal do card */}
       <div className="w-66 h-53 rounded-xl border-3 border-soft-gold overflow-hidden mx-auto">
         <Image
           src={imageUrl}
