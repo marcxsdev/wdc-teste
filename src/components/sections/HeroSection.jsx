@@ -26,7 +26,7 @@ const HeroSection = () => {
         className="hidden lg:block"
       />
 
-      {/* Conteudo da seção hero */}
+      {/* Conteudo */}
       <div className="relative z-10 flex flex-col items-center gap-4 lg:gap-10 h-full text-center pt-8 px-5 lg:items-start lg:text-left lg:justify-center lg:container lg:mx-auto lg:pl-16 lg:pr-12">
         <div className="relative w-46 h-14 lg:w-101 lg:h-31">
           <Image

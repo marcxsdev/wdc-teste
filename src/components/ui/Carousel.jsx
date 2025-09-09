@@ -30,7 +30,7 @@ const carouselItems = [
 
 const Carousel = () => {
   return (
-    <div className="flex overflow-x-auto gap-4 p-4 scrollbar-hide">
+    <div className="flex overflow-x-auto gap-4 p-4 lg:pt-13 lg:pb-28 scrollbar-hide">
       {carouselItems.map((item) => (
         <CarouselCard
           key={item.id}

@@ -3,22 +3,38 @@ import Carousel from "../ui/Carousel";
 
 const CarouselSection = () => {
   return (
-    <section className="mt-[-84px]">
-      <div className="bg-deep-blue relative mx-5 rounded-2xl overflow-hidden border-3 border-soft-gold">
+    <section className="relative flex flex-col lg:items-center">
+      <Image
+        src="/images/carousel/carouselbg.png"
+        alt="Imagem de fundo da seção de carrossel para desktop"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="hidden lg:block z-0"
+      />
+
+      <div className="bg-deep-blue relative mx-5 rounded-2xl overflow-hidden border-3 border-soft-gold lg:w-[1144px] lg:h-[244px] mt-[-84px] lg:mt-[-38] ">
         <Image
           src="/images/carousel/Rectangle1628.png"
           alt="Imagem de fundo"
           fill
           quality={100}
-          className="object-cover z-0 opacity-35"
+          className="object-cover z-0 opacity-35 lg:hidden"
+        />
+        <Image
+          src="/images/carousel/Rectangle1626.png"
+          alt="Imagem de fundo"
+          fill
+          quality={100}
+          className="object-cover z-0 opacity-35 hidden lg:block"
         />
 
         {/* Conteúdo acima da imagem usando z index */}
-        <div className="relative z-10 flex flex-col gap-6 px-7 pt-6.5 pb-9">
-          <h2 className="text-soft-gold text-center font-paris2024 text-3xl leading-8">
+        <div className="relative z-10 flex flex-col gap-6 lg:gap-4 px-7 pt-6.5 pb-9 lg:py-10 lg:px-16">
+          <h2 className="text-soft-gold text-center font-paris2024 text-3xl leading-8 lg:text-4xl lg:leading-9">
             O que você vai aprender nas Pompolimpíadas
           </h2>
-          <p className="text-white text-center font-main text-base font-light leading-5">
+          <p className="text-white text-center font-main text-base font-light leading-5 lg:text-2xl lg:leading-8">
             Participe da superaula gratuita de Ginástica Íntima no dia 13 de
             agosto, às 20h, e tenha acesso a todo o conteúdo do curso. Aprenda a
             dominar a arte do aperta e solta e conquiste o ouro em saúde íntima,
@@ -30,9 +46,12 @@ const CarouselSection = () => {
           </p>
         </div>
       </div>
-      <Carousel />
 
-      <div className="flex justify-center py-4.5">
+      <div className="z-50">
+        <Carousel />
+      </div>
+
+      <div className="flex justify-center py-4.5 lg:hidden">
         <svg
           width="109"
           height="8"
