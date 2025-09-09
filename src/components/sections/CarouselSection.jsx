@@ -16,14 +16,14 @@ const CarouselSection = () => {
       <div className="bg-deep-blue relative mx-5 rounded-2xl overflow-hidden border-3 border-soft-gold lg:w-[1144px] lg:h-[244px] mt-[-84px] lg:mt-[-38] ">
         <Image
           src="/images/carousel/Rectangle1628.png"
-          alt="Imagem de fundo"
+          alt="Imagem de fundo decorativa"
           fill
           quality={100}
           className="object-cover z-0 opacity-35 lg:hidden"
         />
         <Image
           src="/images/carousel/Rectangle1626.png"
-          alt="Imagem de fundo"
+          alt="Imagem de fundo decorativa"
           fill
           quality={100}
           className="object-cover z-0 opacity-35 hidden lg:block"

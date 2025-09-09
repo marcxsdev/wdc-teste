@@ -35,7 +35,7 @@ const CarouselCard = ({ imageUrl, title, text }) => {
       <div className="relative w-full h-10">
         <Image
           src="/images/carousel/cards/Rectangle1577.png"
-          alt="Banner do card"
+          alt="Banner em ondas decorativo"
           fill
           quality={100}
           style={{ objectFit: "cover" }}

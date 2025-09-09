@@ -46,7 +46,7 @@ const AboutSection = () => {
         </div>
 
         {/* imagem principal */}
-        <div className="w-[234px] h-[366px] relative lg:w-[545px] lg:h-[852px] lg:mt-[-80px]">
+        <div className="w-[234px] h-[366px] relative mx-auto lg:w-[545px] lg:h-[852px] lg:mt-[-80px] lg:mx-0">
           <Image
             src="/images/about/catia.png"
             alt="Cátia Damasceno"

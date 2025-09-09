@@ -8,7 +8,7 @@ const PpkaCard = ({ text, bgColor }) => {
       <div className="relative h-full w-11 lg:w-12 flex-shrink-0 overflow-hidden rounded-lg ">
         <Image
           src="/images/ppka/Rectangle1599.png"
-          alt="Banner do card"
+          alt="Banner em ondas decorativo"
           fill
           className="object-cover"
           quality={100}

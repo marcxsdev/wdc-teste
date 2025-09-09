@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* mobile */}
       <Image
         src="/images/hero/BGCEL-1.png"
-        alt="Imagem de fundo da seção hero para mobile"
+        alt="Imagem de fundo da seção principal para mobile"
         layout="fill"
         objectFit="cover"
         quality={100}
@@ -18,7 +18,7 @@ const HeroSection = () => {
       {/* desktop */}
       <Image
         src="/images/hero/BGD.png"
-        alt="Imagem de fundo da seção hero para desktop"
+        alt="Imagem de fundo da seção principal para desktop"
         layout="fill"
         objectFit="cover"
         quality={100}

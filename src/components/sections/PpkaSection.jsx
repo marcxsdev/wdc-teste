@@ -91,7 +91,7 @@ const PpkaSection = () => {
       <div className="absolute top-0 left-0 mt-1.5 lg:hidden">
         <Image
           src="/images/ppka/medals1.png"
-          alt="Medalha na borda esquerda"
+          alt="Conjunto de medalhas"
           width={40}
           height={192}
         />
@@ -101,7 +101,7 @@ const PpkaSection = () => {
       <div className="absolute top-0 right-0 mt-1.5 lg:hidden">
         <Image
           src="/images/ppka/medals2.png"
-          alt="Medalha na borda direita"
+          alt="Conjunto de medalhas"
           width={52}
           height={192}
         />
@@ -111,7 +111,7 @@ const PpkaSection = () => {
       <div className="absolute top-0 left-0 mt-1.5 hidden lg:block z-1">
         <Image
           src="/images/ppka/medals3.png"
-          alt="Medalha na borda esquerda"
+          alt="Conjunto de medalhas"
           width={315}
           height={377}
         />
@@ -168,7 +168,7 @@ const PpkaSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center py-14">
+      <div className="hidden lg:flex justify-center items-center py-14">
         <div className="w-[50px] h-[50px] rounded-full bg-deep-blue border-2 border-soft-gold flex items-center justify-center">
           <ArrowIcon className="w-7 h-7 text-[#D4C47E] rotate-270" />
         </div>

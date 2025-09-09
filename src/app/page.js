@@ -8,11 +8,13 @@ import PpkaSection from "@/components/sections/PpkaSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <CarouselSection />
-      <CTASection />
-      <PpkaSection />
-      <AboutSection />
+      <main>
+        <HeroSection />
+        <CarouselSection />
+        <CTASection />
+        <PpkaSection />
+        <AboutSection />
+      </main>
       <Footer />
     </>
   );
