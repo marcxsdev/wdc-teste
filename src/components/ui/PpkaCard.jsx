@@ -5,7 +5,7 @@ const PpkaCard = ({ text, bgColor }) => {
     <div
       className={`${bgColor} flex flex-row items-center gap-5.5 w-81 h-15 lg:w-88 lg:h-16 rounded-lg`}
     >
-      <div className="relative h-full w-11 lg:w-12 overflow-hidden rounded-lg ">
+      <div className="relative h-full w-11 lg:w-12 flex-shrink-0 overflow-hidden rounded-lg ">
         <Image
           src="/images/ppka/Rectangle1599.png"
           alt="Banner do card"

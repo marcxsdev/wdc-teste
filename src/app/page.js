@@ -1,8 +1,7 @@
 import CarouselSection from "@/components/sections/CarouselSection";
 import CTASection from "@/components/sections/CTASection";
 import HeroSection from "@/components/sections/HeroSection";
-import PpkaCard from "@/components/ui/PpkaCard";
-import Image from "next/image";
+import PpkaSection from "@/components/sections/PpkaSection";
 
 export default function Home() {
   return (
@@ -10,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <CarouselSection />
       <CTASection />
+      <PpkaSection />
     </>
   );
 }
