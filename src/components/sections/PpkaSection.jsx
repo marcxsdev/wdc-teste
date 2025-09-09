@@ -129,7 +129,7 @@ const PpkaSection = () => {
 
       {/* conteudo */}
       <div className="relative z-10 flex flex-col gap-10 py-7 lg:px-14 lg:gap-14">
-        {/* Cards Sedentários */}
+        {/* Cards Sedentaria */}
         <div className="flex flex-col gap-5 items-center justify-center">
           {/* tag */}
           <div>
@@ -146,7 +146,7 @@ const PpkaSection = () => {
           </div>
         </div>
 
-        {/* Parte 2 - Cards Atletas */}
+        {/* Cards Atleta */}
         <div className="flex flex-col gap-5 items-center justify-center">
           {/* tag */}
           <div>
