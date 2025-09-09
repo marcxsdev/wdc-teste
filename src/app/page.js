@@ -1,3 +1,5 @@
+import Footer from "@/components/common/Footer";
+import AboutSection from "@/components/sections/AboutSection";
 import CarouselSection from "@/components/sections/CarouselSection";
 import CTASection from "@/components/sections/CTASection";
 import HeroSection from "@/components/sections/HeroSection";
@@ -10,6 +12,8 @@ export default function Home() {
       <CarouselSection />
       <CTASection />
       <PpkaSection />
+      <AboutSection />
+      <Footer />
     </>
   );
 }

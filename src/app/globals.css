@@ -4,6 +4,7 @@
 @theme inline {
   --font-main: var(--font-nunito-sans);
   --font-paris2024: var(--font-paris2024);
+  --font-inter: var(--font-inter);
 }
 
 @theme {

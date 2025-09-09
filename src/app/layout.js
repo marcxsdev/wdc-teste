@@ -1,4 +1,5 @@
 import { Nunito_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import Paris2024 from "next/font/local";
 import "./globals.css";
 
@@ -11,6 +12,11 @@ const nunitoSans = Nunito_Sans({
 const paris2024 = Paris2024({
   src: "../../public/fonts/Paris2024-Variable.ttf",
   variable: "--font-paris2024",
+});
+
+const inter = Inter({
+  weight: "400",
+  variable: "--font-inter",
 });
 
 export default function RootLayout({ children }) {
